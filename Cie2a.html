@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Table</title>
+    <style>
+      /* Table styling */
+      table {
+        width: 70%;
+        margin: auto;
+        border-collapse: collapse;
+        border: 2px solid black;
+      }
+
+      /* Header row */
+      thead {
+        background-color: navy;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      /* Footer row */
+      tfoot {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* Body rows */
+      tbody tr:nth-child(even) {
+        background-color: lightblue;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: lightyellow;
+      }
+
+      /* Table cells */
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; color: darkgreen">Student Information</h2>
+
+    <table>
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Sachu</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Prithesh</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Sairaj</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Students: 3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
